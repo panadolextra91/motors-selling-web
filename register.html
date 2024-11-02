@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/register.js" defer></script>
+</head>
+<body>
+
+<div class="register-container">
+    <div class="register-form">
+        <img src="images/logo.png" class="logo" alt="MediMaster Logo">
+        <h1>MotorShop</h1>
+        <p>Create your account to get started.</p>
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <div class="input-wrapper">
+                    <input type="text" id="username" placeholder="Choose a username" required>
+                    <span class="error-message" id="usernameError"></span>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <div class="input-wrapper">
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <div class="input-wrapper">
+
+                    <input type="password" id="password" placeholder="Create a password" required>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <div class="input-wrapper">
+                    <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                    <span class="error-message" id="confirmPasswordError"></span>
+                </div>
+            </div>
+            <button type="submit" class="register-button">Register</button>
+        </form>
+        <p class="already-account">Already have an account? <a href="login.html">Sign in</a></p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.register-form {
+    width: 450px;
+    padding: 40px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #FFD700;
+    text-align: center;
+}
+
+.register-form .logo {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.register-form h1 {
+    margin-bottom: 10px;
+    color: black;
+    text-shadow:
+            -1px -1px 0 #FFD700, /* top-left */
+            1px -1px 0 #FFD700,  /* top-right */
+            -1px 1px 0 #FFD700,  /* bottom-left */
+            1px 1px 0 #FFD700;   /* bottom-right */
+}
+
+.register-form p {
+    margin-bottom: 20px;
+    color: #f8f8f8;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #f8f8f8;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: -10px;
+    font-size: 12px;
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 10px;
+}
+
+.active-label {
+    color: #333;
+}
+
+.register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: black;
+    text-shadow: -1px -1px 0 #FFD700, /* top-left */
+    1px -1px 0 #FFD700,  /* top-right */
+    -1px 1px 0 #FFD700,  /* bottom-left */
+    1px 1px 0 #FFD700;   /* bottom-right */;
+    box-shadow: -1px -1px 0 #FFD700, /* top-left */
+    1px -1px 0 #FFD700,  /* top-right */
+    -1px 1px 0 #FFD700,  /* bottom-left */
+    1px 1px 0 #FFD700;   /* bottom-right */;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.register-button:hover {
+    background-color: #FFD700;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.already-account {
+    margin-top: 15px;
+    color: #777;
+}
+
+.already-account a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 15px;
+    font-style: italic;
+    display: block;   /* Ensures the span takes up space even when empty */
+    margin-top: 5px;  /* Adjust the spacing as needed */
+}
+
